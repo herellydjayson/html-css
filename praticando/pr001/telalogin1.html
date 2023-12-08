@@ -4,177 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
-    <style>
-        body {
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(valorant3.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        div {
-            background-color: #fff;
-            position: absolute;
-            text-align: center;
-            font-size: 15px;
-            height: 500px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 80px;
-            border-radius: 20px;
-            
-        }
-
-        input {
-            background-color: #E8F0FE;
-            height: 5px;
-            padding: 20px;
-            width: 370px;
-            border-radius: 10px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-        
-        }
-
-        input:hover {
-            background-color: #5177b83b ;
-        }
-
-        .sociais {
-        height: 40px;
-        width: 100px;
-        border: 50px;
-        padding: 0px;
-        margin: 5px;
-        
-    }
-
-    .img {
-        
-        height: 40px;
-        width: 100px;
-        border-radius: 10px;
-        border: none;
-    }
-
-    .botao {
-        height: 80px;
-        width: 80px;
-        border-radius: 30px;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top:65%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        background-color: #e41418;
-    }
-
-    .botao:hover {
-        background-color: #c21c1e;
-        cursor: pointer;
-    }
-
-    /*haste da seta*/
-    .botao::before {
-        content: '';
-        height: 2px;
-        width: 20px;
-        background-color: #fff;
-        margin-left: -1px; /*afasta da esquerda pra ajustar a seta*/
-        position: absolute;
-    }
-
-    /*seta para direita*/
-    .botao::after{
-        content: '';
-        -moz-transform: rotate(315deg);
-        -ms-transform: rotate(315deg);
-        -webkit-transform: rotate(315deg);
-        transform: rotate(315deg);
-
-        border-bottom-style: solid;
-        border-bottom-width: 3px;
-        border-right-style: solid;
-        border-right-width: 3px;
-        height: 12px;
-        width: 12px;
-        margin-left: 5px;
-        border-color: #fff;
-    }
-
-    .texto {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: larger;
-        color: #434344;
-        position: absolute;
-        top:75%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .texto:hover {
-    color: black;
-    }
-
-    .conta {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: larger;
-        color: #434344;
-        position: absolute;
-        top:80%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .conta:hover {
-        color: black;
-    }
-
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
-<body>
+
+    <body>
     
-    <img src="riot-logo.png" alt="">
-
-    <div>
-       <h1> Fazer login</h1>
-       <input type="text" placeholder="Nome">
-       <br>
-       <br>
-       <input type="password" placeholder="Senha">
-       <br>
-       <br>
-       
-    <button class="sociais"><a href="https://www.facebook.com/login"><img src="facebook.png" alt="facebook" class="img"></a></button>
-
-    <button class="sociais"><a href="https://accounts.google.com/"><img src="gmail.png" alt="gmail" class="img"></a></button>
-
-    <button class="sociais"><a href="https://appleid.apple.com/"><img src="download.jpeg" alt="apple" class="img"></a></button>
-
-    <button class="sociais"><a href="https://login.live.com/"><img src="xbox.jpeg" alt="xbox" class="img"></a></button>
-    <br>
-    <br>
-    <button class="botao"></button>
-
-    
-        
-    <a href="#">
-     <p class="texto">Não consegue fazer login?</p>
-    </a>
-    <a href="#">
-    <p class="conta">Criar conta</p>
-    </a>
-    
-    </div>
-
-
-</body>
+            
+                <img src="riot-logo.png" alt="riot logo" class="riot">
+                <div>
+                   <h1 class="title">Fazer login</h1>
+                   <input type="text" placeholder="Nome">
+                   <br>
+                   <br>
+                   <input type="password" placeholder="Senha">
+                   <br>
+                   <br>
+                   <section id="redes">
+                    <a href="https://www.facebook.com/"><img src="redes/facebook.jpeg" alt="facebook"></a>
+                    <a href="#"><img src="redes/gmail.jpeg" alt="facebook" class="mail"></a>
+                    <a href="#"><img src="redes/apple.jpeg" alt="facebook"></a>
+                    <a href="#"><img src="redes/images.jpeg" alt="facebook"></a>
+                    </section>
+                  <button class="botao"></button>
+                <a href="#">
+                    <p class="texto">Não consegue fazer login?</p>
+                </a>
+                <a href="#">
+                    <p class="conta">Criar conta</p>
+                </a>
+            </div>
+    </body>
 </html>
