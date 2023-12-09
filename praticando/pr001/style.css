@@ -13,7 +13,7 @@ body {
 }
 
 div {
-    background-color: #fff;
+    background-color: #ffffff91;
     position: absolute;
     text-align: center;
     border-radius: 15px;
@@ -27,6 +27,7 @@ div {
 }
 
 input {
+    font: bold;
     background-color: #E8F0FE;
     height: 2px;
     padding: 20px;
@@ -47,7 +48,6 @@ width: 80px;
 margin: 8px;
 border-radius: 10px;
 }
-
 
 .botao {
 height: 70px;
